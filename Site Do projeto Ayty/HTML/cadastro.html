@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../IMG/" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Briefings</title>
+</head>
+<body>
+<form action="">
+<div class="container-switch">
+    <div class="switch-corpo">
+        <div class="circulo-switch" onclick="MudarModo()"></div>
+    </div>
+</div>
+<div class="container">
+    
+    <div class="container-tela-cadastrar">
+        <div class="container-formulario-cadstrar">
+            <div class="container-button-sair">
+                 <a href="../HTML/index.html" class="button-sair plus-button">x</a>
+            </div>
+            <p class="text-do-topo">Crie uma <br> nova Briefing</p>
+            <div class="label">
+                <label for="nome" class="label-titulo">Nome</label>
+                <input type="text" name="nome" id="nome" class="label-entrada">
+            </div>
+            <div class="label">
+                <label for="descricao" class="label-titulo">Descrição</label>
+                <input type="text" name="descricao" id="descricao" class="label-entrada label-descricao">
+            </div>
+            <div class="label">
+                <label for="descricao" class="label-titulo">Estado</label>
+                <select class="label-entrada" name="estados" id="estado">
+                    <option value="negociacao">Negociação</option>
+                    <option value="finalizado">Finalizado</option>
+                    <option value="aprovado">Aprovado</option>
+                </select>
+                
+                <!-- <input type="text" name="descricao" id="descricao" class="label-entrada"> -->
+            </div>
+            <div class="buttons-cadastrar">
+                <input class="button-maiusc" type="reset" value="LIMPAR">
+                <input  class="button-maiusc" type="submit" value="SALVAR">
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+
+</body>
+
+<script src="../JAVASCRIPT/script.js"></script>
+</html>
